@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/huichen/wukong/types"
-	"github.com/huichen/wukong/utils"
+	"github.com/fesiong/wukong/types"
+	"github.com/fesiong/wukong/utils"
 )
 
 type ScoringFields struct {

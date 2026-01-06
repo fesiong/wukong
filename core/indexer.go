@@ -6,8 +6,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/huichen/wukong/types"
-	"github.com/huichen/wukong/utils"
+	"github.com/fesiong/wukong/types"
+	"github.com/fesiong/wukong/utils"
 )
 
 // 索引器
@@ -511,7 +511,7 @@ func (indexer *Indexer) searchIndex(
 // 假定第 i 个搜索键首字节出现在文本中的位置为 P_i，长度 L_i
 // 紧邻距离计算公式为
 //
-// 	ArgMin(Sum(Abs(P_(i+1) - P_i - L_i)))
+//	ArgMin(Sum(Abs(P_(i+1) - P_i - L_i)))
 //
 // 具体由动态规划实现，依次计算前 i 个 token 在每个出现位置的最优值。
 // 选定的 P_i 通过 tokenLocations 参数传回。

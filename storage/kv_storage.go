@@ -1,8 +1,9 @@
 package storage
 
 import (
-	"github.com/cznic/kv"
 	"io"
+
+	"modernc.org/kv"
 )
 
 type kvStorage struct {

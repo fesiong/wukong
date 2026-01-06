@@ -16,7 +16,7 @@
 # 安装/更新
 
 ```
-go get -u -v github.com/huichen/wukong
+go get -u -v github.com/fesiong/wukong
 ```
 
 需要Go版本至少1.1.1
@@ -28,8 +28,8 @@ go get -u -v github.com/huichen/wukong
 package main
 
 import (
-	"github.com/huichen/wukong/engine"
-	"github.com/huichen/wukong/types"
+	"github.com/fesiong/wukong/engine"
+	"github.com/fesiong/wukong/types"
 	"log"
 )
 
@@ -41,7 +41,7 @@ var (
 func main() {
 	// 初始化
 	searcher.Init(types.EngineInitOptions{
-		SegmenterDictionaries: "github.com/huichen/wukong/data/dictionary.txt"})
+		SegmenterDictionaries: "github.com/fesiong/wukong/data/dictionary.txt"})
 	defer searcher.Close()
 
 	// 将文档加入索引，docId 从1开始

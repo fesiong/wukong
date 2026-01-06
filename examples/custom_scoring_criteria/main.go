@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/huichen/wukong/engine"
-	"github.com/huichen/wukong/types"
+	"github.com/fesiong/wukong/engine"
+	"github.com/fesiong/wukong/types"
 )
 
 const (
